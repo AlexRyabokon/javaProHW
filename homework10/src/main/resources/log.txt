@@ -1,0 +1,2 @@
+[Wed Dec 03 00:00:00 EET 1902][[DEBUG]] Message: Message
+[Wed Dec 03 00:00:00 EET 1902][[DEBUG]] Message: Message
