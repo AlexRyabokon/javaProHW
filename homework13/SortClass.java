@@ -18,12 +18,12 @@ public class SortClass {
     }
 
     public static int[] insertion(int[] array) {
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             int temp = array[i];
             int j = i - 1;
             while (j >= 0 && array[j] > temp) {
                 array[j + 1] = array[j];
-                j = j - 1;
+                j--;
             }
             array[j + 1] = temp;
         }
