@@ -5,36 +5,34 @@ import java.util.*;
 public class Homework14 {
 
     public static int countOccurance(List<String> list, String str) {
-        int x = 0;
+        int counter = 0;
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).equals(str)) {
-                x++;
+        for (String s : list) {
+            if (s.equals(str)) {
+                counter++;
             }
         }
 
-        return x;
+        return counter;
     }
 
     public static <T> List<T> toList(T[] array) {
         List<T> result = new ArrayList<>();
+        result.addAll(Arrays.asList(array));
 
-        for (int i = 0; i < array.length; i++) {
-            result.add(array[i]);
-        }
         return result;
     }
 
-    public static List<Integer> findUnique(List <Integer> list){
-        return new ArrayList<>(new HashSet<>(list));
+    public static Set<Integer> findUnique(List <Integer> list){
+        return new HashSet<>(list);
     }
 
-    public static void calcOccurance(List<String> words) {
+    public static int calcOccurance(List<String> words) {
         Set<String> uniqueWords = new HashSet<>(words);
         for (String word : uniqueWords) {
-            int frequency = Collections.frequency(words, word);
-            System.out.println(word + ": " + frequency);
+            return Collections.frequency(words, word);
         }
+        throw new RuntimeException("CalcOccurance method Error, Please, check your input parameters");
     }
 
     public static Map<String, Integer> findOccurance(List<String> words){

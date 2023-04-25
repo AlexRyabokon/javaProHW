@@ -11,7 +11,7 @@ public class Note {
         this.phone = Objects.requireNonNull(phone, "Phone cannot be null");
     }
 
-     String getName() {
+    public String getName() {
         return name;
     }
 

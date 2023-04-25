@@ -2,13 +2,14 @@ package homework14.phonebook;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Phonebook {
 
-    private ArrayList<Note> noteList;
+    private final List<Note> noteList;
 
     public Phonebook() {
-        this.noteList = new ArrayList<Note>();
+        this.noteList = new ArrayList<>();
     }
 
     public void add(Note note) {
@@ -29,17 +30,14 @@ public class Phonebook {
     }
 
     public ArrayList<Note> findAll(String name) {
-        ArrayList<Note> result = new ArrayList<Note>();
+        ArrayList<Note> result = new ArrayList<>();
         for (Note note : noteList) {
             if (note.getName().equals(name)) {
                 result.add(note);
             }
         }
-        if (result.size() > 0) {
-            return result;
-        } else {
-            return null;
-        }
+        return result.size() > 0 ? result : null;
+
     }
 
 }
