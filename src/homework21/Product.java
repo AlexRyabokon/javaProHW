@@ -1,6 +1,7 @@
 package homework21;
 
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Random;
 
 
@@ -8,25 +9,19 @@ public class Product {
 
     private Enum type;
     private double price;
-    private boolean isDiscont;
+    private boolean discount;
     private LocalDate productDate;
     private final long id;
 
-    public Product(Enum type, double price, boolean isDiscont, LocalDate localDate) {
+    public Product(Enum type, double price, boolean discount, LocalDate localDate) {
         this.type = type;
         this.price = price;
-        this.isDiscont = isDiscont;
+        this.discount = discount;
         this.productDate = localDate;
         this.id = new Random().nextLong(50000);
     }
 
-    public boolean isDiscont() {
-        return isDiscont;
-    }
 
-    public void setDiscont(boolean discont) {
-        isDiscont = discont;
-    }
 
     public LocalDate getLocalDate() {
         return productDate;
@@ -55,11 +50,11 @@ public class Product {
     }
 
     public boolean isDiscount() {
-        return isDiscont;
+        return discount;
     }
 
     public void setDiscount(boolean discont) {
-        isDiscont = discont;
+        discount = discont;
     }
 
     @Override
@@ -67,9 +62,22 @@ public class Product {
         return "Product{" +
                 "type=" + type +
                 ", price=" + price +
-                ", isDiscont=" + isDiscont +
+                ", isDiscont=" + discount +
                 ", ProductDate=" + productDate +
                 ", Product ID=" + id +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Double.compare(product.price, price) == 0 && discount == product.discount && id == product.id && Objects.equals(type, product.type) && Objects.equals(productDate, product.productDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, price, discount, productDate, id);
     }
 }
