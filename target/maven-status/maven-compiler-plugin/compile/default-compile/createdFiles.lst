@@ -1,0 +1,7 @@
+LoggingSystem\configuration\FileLoggerConfiguration.class
+LoggingSystem\configuration\FileLoggerConfigurationLoader.class
+LoggingSystem\enums\LoggingLevel.class
+LoggingSystem\exceptions\FileMaxSizeReachedException.class
+MathSystem\BasicMathLibrary.class
+LoggingSystem\interfaces\Printable.class
+LoggingSystem\FileLogger.class
