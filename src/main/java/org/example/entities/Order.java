@@ -1,5 +1,7 @@
 package org.example.entities;
 
+import java.util.Arrays;
+
 public class Order {
     private Long id;
     private String date;
@@ -50,5 +52,13 @@ public class Order {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", date='" + date + '\'' +
+                ", cost=" + cost +
+                ", products=" + Arrays.toString(products) +
+                '}';
+    }
 }
