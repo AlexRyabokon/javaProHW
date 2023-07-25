@@ -1,0 +1,26 @@
+2023-07-24T01:03:35.784+03:00  INFO 13256 --- [main] c.e.homework40.Homework40Application     : Starting Homework40Application using Java 17.0.7 with PID 13256 (C:\Users\Notebook X\Desktop\homework40\target\classes started by Notebook X in C:\Users\Notebook X\Desktop\homework40)
+2023-07-24T01:03:35.788+03:00  INFO 13256 --- [main] c.e.homework40.Homework40Application     : No active profile set, falling back to 1 default profile: "default"
+2023-07-24T01:03:36.530+03:00  INFO 13256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24T01:03:36.667+03:00  INFO 13256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2023-07-24T01:03:37.332+03:00  INFO 13256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-24T01:03:37.340+03:00  INFO 13256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-24T01:03:37.341+03:00  INFO 13256 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-24T01:03:37.455+03:00  INFO 13256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-24T01:03:37.456+03:00  INFO 13256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1604 ms
+2023-07-24T01:03:37.585+03:00  INFO 13256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-24T01:03:37.775+03:00  INFO 13256 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@214beff9
+2023-07-24T01:03:37.780+03:00  INFO 13256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-24T01:03:37.853+03:00  INFO 13256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24T01:03:37.904+03:00  INFO 13256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-24T01:03:37.906+03:00  INFO 13256 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-24T01:03:38.046+03:00  INFO 13256 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24T01:03:38.155+03:00  INFO 13256 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24T01:03:38.429+03:00  INFO 13256 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24T01:03:38.996+03:00  INFO 13256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-24T01:03:39.000+03:00  INFO 13256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24T01:03:39.266+03:00  WARN 13256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24T01:03:39.572+03:00  INFO 13256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24T01:03:39.581+03:00  INFO 13256 --- [main] c.e.homework40.Homework40Application     : Started Homework40Application in 4.297 seconds (process running for 5.071)
+2023-07-24T01:04:04.252+03:00  INFO 13256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24T01:04:04.255+03:00  INFO 13256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-24T01:04:04.260+03:00  INFO 13256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
