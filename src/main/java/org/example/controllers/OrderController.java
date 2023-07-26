@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@ResponseBody
+@RequestMapping("/orders")
 public class OrderController {
     private OrderRepository orderRepository;
 
@@ -16,16 +16,14 @@ public class OrderController {
         this.orderRepository = orderRepository;
     }
 
-    @RequestMapping("/{id}")
+    @GetMapping("/{id}")
     public Order getOrder(@PathVariable long id){
         return orderRepository.getById(id);
     }
 
-    @RequestMapping("/orders")
+    @GetMapping()
     public List<Order> getAllOrders(){
         return orderRepository.getAllOrders();
     }
-
-
-
 }
+
